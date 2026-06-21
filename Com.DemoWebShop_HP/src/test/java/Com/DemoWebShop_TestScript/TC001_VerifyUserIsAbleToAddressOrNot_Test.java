@@ -23,7 +23,7 @@ public class TC001_VerifyUserIsAbleToAddressOrNot_Test extends BaseTest {
 		newAddresses_Page.getFirstNameTextField().sendKeys(fileutility.readDataFromExcelFile("Sheet1", 1, 0));
 		newAddresses_Page.getLastNameTextField().sendKeys(fileutility.readDataFromExcelFile("Sheet1", 1, 1));
 		newAddresses_Page.getEmailTextField().sendKeys(fileutility.readDataFromExcelFile("Sheet1", 1, 2));
-		
+		Thread.sleep(3000);
 		webDriverUtility.selectByVisibleText(newAddresses_Page.getCountryDropdown(),
 				fileutility.readDataFromExcelFile("Sheet1", 1, 3));
 		
